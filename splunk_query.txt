@@ -1,0 +1,1 @@
+source="/var/log/auth.log" "Failed password for" | stats count BY src_ip, user | where count > 5
